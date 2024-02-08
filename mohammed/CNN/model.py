@@ -16,12 +16,12 @@ y_val = np.load("data/y_val.npy")
 x_test = np.load("data/x_test.npy")
 y_test = np.load("data/y_test.npy")
 
-model = load_model('modelv3')
+model = load_model('modelv4')
 
 # The batch size controls the number of images that are processed simultaneously
 batch_size = 128
 # The number of epochs that we want to train the network for
-epochs = 40
+epochs = 20
 # The learning rate (step size in gradient descent)
 learning_rate = 0.001
 
@@ -44,7 +44,7 @@ history = model.fit(x = x_train, y = y_train, batch_size = batch_size, epochs = 
 end_time = time.time()
 training_duration = end_time - start_time
 
-model.save('modelv3')
+model.save('modelv4')
 
 # Make a list of incorrect classifications
 incorrect_indices = []
@@ -79,4 +79,3 @@ with open('hist.json', 'w') as file:
     import json
     history_dict = history.history
     json.dump(history_dict, file)
-    
