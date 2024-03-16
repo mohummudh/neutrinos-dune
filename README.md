@@ -1,4 +1,5 @@
 # Characterisation of neutrino-induced particles at DUNE
+By Mohammed Sultan and Andrew Jolly
 
 The code presented achieved two tasks: 
 1. classifying individual particles as tracks or showers
