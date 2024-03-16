@@ -9,3 +9,5 @@ We implemented a naive Bayes estimator and a BDT for track-shower classification
 5 original features were developed for the traditional ML methods, the CNNs used 256x256 pixel images. 
 
 Simulated data from the DUNE experiment was used, which two methods of particle reconstruction: real and perfect reconstruction. 
+
+Detailed report given in the folder: mohammed
